@@ -1,0 +1,140 @@
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div class="main-container">
+  <!-- ============================================================== -->
+  <!-- Topbar - style you can find in header.scss -->
+  <!-- ============================================================== -->
+  <mat-toolbar color="primary" class="topbar telative" style="height:150px;">
+    <!-- ============================================================== -->
+    <!-- Logo - style you can find in header.scss -->
+    <!-- ============================================================== -->
+    <div>
+      <table >
+        <tr>
+          <td style="text-align:left;">
+            <img src="assets/images/fotp.png" style="height:100px;width:100px;">
+          </td>
+          <td style="text-align:left;">
+            <img src="assets/images/background/pavillion.png" style="height:100px;width:200px;">
+          </td>
+          <td style="text-align:left;">
+            <img src="assets/images/tam.png" style="height:100px;width:250px;">
+          </td>
+
+        </tr>
+        <tr>
+          <td colspan="3">
+              2019 Spring Rock Park Tennis Complex Fundraiser
+          </td>
+        </tr>
+      </table>
+      </div>
+<!-- ============================================================== -->
+<!-- sidebar toggle -->
+<!-- ============================================================== -->
+
+
+<span fxFlex></span>
+<!-- ============================================================== -->
+<!-- app header component - style you can find in header.scss / header.component.ts-->
+<!-- ============================================================== -->
+<app-header></app-header>
+  </mat-toolbar>
+<!-- ============================================================== -->
+<!-- End Topbar - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 0 : 0">
+  <!-- ============================================================== -->
+  <!-- Sidebar - style you can find in sidebar.scss -->
+  <!-- ============================================================== -->
+  <mat-sidenav style="background-color:#2e7d32;" #snav id="snav" class="dark-sidebar pl-xs" [mode]="mobileQuery.matches ? 'side' : 'over'" fixedTopGap="0" [opened]="mobileQuery.matches" [disableClose]="mobileQuery.matches">
+
+    <app-sidebar></app-sidebar>
+
+
+  </mat-sidenav>
+  <!-- ============================================================== -->
+  <!-- Sidebar - style you can find in sidebar.scss -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- Page container - style you can find in pages.scss -->
+  <!-- ============================================================== -->
+  <mat-sidenav-content class="page-wrapper" style="background-color:white;">
+
+    <div class="page-content">
+      <table>
+        <tr>
+
+          <td class="page-content">
+            <b>
+
+              Event Dates/Registration (Febuary, 2019 through April, 2019)
+            </b>
+            <table>
+              <tr>
+                <td>
+                  <ul>
+                    <li>
+                      <a href="https://www.eventbrite.com/preview?eid=53086986606/" style="color:purple;font-weight:800">Click here! </a> Friday, Feb 1 - "kickoff event!"
+                    </li>
+                    <li>
+                      <a href="https://www.eventbrite.com/preview?eid=54151967994/" style="color:purple;font-weight:800">Click here! </a> Friday, Feb 8
+                    </li>
+                    <li>
+                    <a href="https://www.eventbrite.com/preview?eid=54202832130/" style="color:purple;font-weight:800">Click here! </a> Friday, March 1
+                    </li>
+                    <li>
+                      <a href="https://www.eventbrite.com/preview?eid=54202902340/" style="color:purple;font-weight:800">Click here! </a> Friday, March 8
+                    </li>
+                    <li>
+                      <a href="https://www.eventbrite.com/preview?eid=54202987595/" style="color:purple;font-weight:800">Click here! </a> Friday, April 5
+                    </li>
+                    <li>
+                      <a href="https://www.eventbrite.com/preview?eid=54202995619/" style="color:purple;font-weight:800">Click here! </a> Friday, April 12
+                    </li>
+                   </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <a href="https://www.eventbrite.com/preview?eid=53233618185/" style="color:purple;font-weight:800">Click here!</a> KIDS EVENT, Friday, Feb 1 - Shot in the Dark Demo Night
+                    </li>
+                    <li>
+                      <a href="https://www.eventbrite.com/preview?eid=54151967994/" style="color:purple;font-weight:800">Click here!</a> KIDS EVENT, Friday, March 1 - Shot in the Dark Demo Night
+                    </li>
+                    <li>Kids Event - TBD</li>
+                    <li>Kids Event - TBD</li>
+                    <li>Kids Event - TBD</li>
+                 
+                  </ul>
+                  
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  All attendees will have the opportunity to purchase a <b>stadium seat </b>with a chosen name on it!
+                </td>
+
+              </tr>
+            </table>
+          </td>
+          <td>
+          
+          </td>
+          <td>
+          
+          </td>
+        </tr>
+      </table>
+
+      <router-outlet><app-spinner></app-spinner></router-outlet>
+
+    </div>
+
+  </mat-sidenav-content>
+  <!-- ============================================================== -->
+  <!-- Page container - style you can find in pages.scss -->
+  <!-- ============================================================== -->
+</mat-sidenav-container>
+</div>
