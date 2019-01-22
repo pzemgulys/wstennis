@@ -1,0 +1,157 @@
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div class="main-container">
+  <!-- ============================================================== -->
+  <!-- Topbar - style you can find in header.scss -->
+  <!-- ============================================================== -->
+  <mat-toolbar color="primary" class="topbar telative" style="height:150px;">
+    <!-- ============================================================== -->
+    <!-- Logo - style you can find in header.scss -->
+    <!-- ============================================================== -->
+    <div>
+      <table >
+        <tr>
+          <td style="text-align:left;">
+            <img src="assets/images/fotp.png" style="height:100px;width:100px;">
+          </td>
+          <td style="text-align:left;">
+            <img src="assets/images/background/pavillion.png" style="height:100px;width:200px;">
+          </td>
+          <td style="text-align:left;">
+            <img src="assets/images/tam.png" style="height:100px;width:250px;">
+          </td>
+          <td style="text-align:left;">
+            <img src="assets/images/SpringRockOpen.jpg" style="height:100px;width:250px;">
+          </td>
+          <td style="text-align:left;">
+            <img src="assets/images/party.png" style="height:100px;width:250px;">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+              2019 Spring Rock Park Tennis Complex Fundraiser
+          </td>
+        </tr>
+      </table>
+      </div>
+<!-- ============================================================== -->
+<!-- sidebar toggle -->
+<!-- ============================================================== -->
+
+
+<span fxFlex></span>
+<!-- ============================================================== -->
+<!-- app header component - style you can find in header.scss / header.component.ts-->
+<!-- ============================================================== -->
+<app-header></app-header>
+  </mat-toolbar>
+<!-- ============================================================== -->
+<!-- End Topbar - style you can find in pages.scss -->
+<!-- ============================================================== -->
+  <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 0 : 0">
+    <!-- ============================================================== -->
+    <!-- Sidebar - style you can find in sidebar.scss -->
+    <!-- ============================================================== -->
+
+    
+    <mat-sidenav style="background-color:#2e7d32;" #snav id="snav" class="dark-sidebar pl-xs" [mode]="mobileQuery.matches ? 'side' : 'over'" fixedTopGap="0" [opened]="mobileQuery.matches" [disableClose]="mobileQuery.matches">
+
+      <app-sidebar>
+        
+      </app-sidebar>
+
+
+    </mat-sidenav>
+    <!-- ============================================================== -->
+    <!-- Sidebar - style you can find in sidebar.scss -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page container - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <mat-sidenav-content class="page-wrapper" style="background-color:white;">
+
+      <div class="page-content">
+        <table>
+          <tr>
+
+            <td class="page-content">
+              
+                <h5>Event Dates/Registration (March, 2019 through May, 2019)</h5>
+              
+              <table>
+                <tr>
+                  <td style="width:50%;" valign="top">
+                    <img src="assets/images/silentAuctions.png" style="height:75px;width:200px;">
+                    <ul>
+                      <li>
+                        Friday, March 1 - "kickoff event!" - 7:30 pm-10:00 pm
+                      </li>
+                      <li>
+                        Friday, March 15 - 7:30 pm-10:00 pm
+                      </li>
+                      <li>
+                        Friday, April 5  - 7:30 pm-10:00 pm
+                      </li>
+                      <li>
+                        Friday, April 12 - 7:30 pm-10:00 pm
+                      </li>
+                      <li>
+                        Friday, May 3 - 7:30 pm-10:00 pm
+                      </li>
+                      <li>
+                        Friday, May 10 - 7:30 pm-10:00 pm
+                      </li>
+                    </ul>
+                    <font style="color:green;font-weight:600">Contact Coach Simon (simon.piacente@gmail.com) about the "Tennis Mixer" during the auctions! </font>
+                  </td>
+                  <td style="width:50%;" valign="top">
+                    <img src="assets/images/kidsEvents.png" style="height:75px;width:200px;">
+                    <label style="font-weight:600;;color:green;">Shot-in-the-Dark Demo Nights</label>
+                    <ul>
+                      <li>
+                        <a href="https://www.eventbrite.com/preview?eid=53233618185/" style="color:purple;font-weight:800">Click here!</a> Friday, March 15 - Kids Night
+                      </li>
+                      <li>
+                        <a href="https://www.eventbrite.com/preview?eid=54151967994/" style="color:purple;font-weight:800">Click here!</a> Friday, May 10 - Kids Night
+                      </li>
+                      <li>
+                        <a href="assets/2019 Hit-A-Thon.docx" target="_blank"><label style="color:green;">Click here for "Hit-a-thon" Pledge Sheet! </label></a>
+                      </li>
+
+                    </ul>
+                    <label style="font-weight:600;color:green;">Staffing by nationally ranked Mikos sisters, for Shot in the Dark Demo nights!</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    All attendees will have the opportunity to purchase a <b>stadium seat </b>with a chosen name on it! <br />
+                  </td>
+
+                </tr>
+                <tr>
+                  <td >
+                      * <a href="http://www.paypal.com" target="_blank"><label style="color:purple;font-weight:600;font-size:medium"><img />  Make a Donation! </label></a>
+                  </td>
+                  <td>
+                      * <a href="assets/tennispavilionfundraisers.pdf" target="_blank"><label style="color:purple;font-weight:600;font-size:medium"><img />The Official Flyer!</label></a>
+                  </td>
+                  <td colspan="3"></td>
+                </tr>
+              </table>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
+        <router-outlet><app-spinner></app-spinner></router-outlet>
+
+      </div>
+
+    </mat-sidenav-content>
+    <!-- ============================================================== -->
+    <!-- Page container - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+  </mat-sidenav-container>
+</div>
